@@ -1,8 +1,11 @@
-const reverseString = (str) => {
-  var rString = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    rString += str[i];
+const reverseString = str => {
+  let strReversed = "";
+  let top = str.length - 1;
+
+  for (top; top >= 0; top--) {
+    strReversed += str[top];
   }
-  return rString;
+  return strReversed;
 };
-console.log(reverseString("abcde"));
+
+console.log(reverseString("fedcba"));
